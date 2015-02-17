@@ -2,7 +2,7 @@ class ClubsController < SecretController
 
 
   def index
-    @clubs = Club.all
+    @clubs = current_student.clubs    
   end
 
   def show
