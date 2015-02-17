@@ -1,4 +1,5 @@
-class ClubsController < ApplicationController
+class ClubsController < SecretController
+
 
   def index
     @clubs = Club.all
@@ -7,5 +8,6 @@ class ClubsController < ApplicationController
   def show
     @club = Club.find(params[:id])
   end
+
 
 end
